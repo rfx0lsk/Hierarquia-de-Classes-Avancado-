@@ -3,17 +3,33 @@ public class Jogo {
     private double preco;
     private int genero;
 
-    public Jogo(String nome, double preco, int genero){
-
+    public Jogo(String nome, double preco, int genero) {
+        this.nome = nome;
+        this.preco = preco;
+        this.genero = genero;
     }
 
-    public void nomeJogo(){
-        System.out.println("Nome: "+ nome);
+    public String getNome() {
+        return nome;
     }
-    public void precoJogo(){
-        System.out.println("Preço: "+preco);
+
+    public double getPreco() {
+        return preco;
     }
-    public void generoJogo(){
-        System.out.println("Gênero: "+ genero);
+
+    public int getGenero() {
+        return genero;
+    }
+
+    public void nomeJogo() {
+        System.out.println("Nome: " + nome);
+    }
+
+    public void precoJogo() {
+        System.out.println("Preço: " + preco);
+    }
+
+    public void generoJogo() {
+        System.out.println("Gênero: " + genero);
     }
 }
